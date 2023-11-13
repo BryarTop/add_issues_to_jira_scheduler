@@ -183,7 +183,6 @@ const thirdPage = async (issue:Issue) => {
 
 const startRecurringSpec = async (driver:WebDriver) => {
 	try {	
-		// await driver.get('https://jira.octanner.com/projects/CAM?selectedItem=pl.com.tt.jira.plugin.theschedulerpro:scheduled-issues-project-tab-panel-link');
 		await driver.executeScript(`document.querySelector('.css-mu6jxl').click()`);
 		await driver.wait(until.urlContains('Step1!'));
 	} finally {
